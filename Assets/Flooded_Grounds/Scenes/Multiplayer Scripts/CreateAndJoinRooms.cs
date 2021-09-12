@@ -23,9 +23,9 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinRoom(joinInput.text);
     }
 
-
+    //Load Game upon Joining Lobby
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("Game");
+        PhotonNetwork.LoadLevel("Scene_A");
     }
 }
