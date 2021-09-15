@@ -39,6 +39,8 @@ public class CharController_Motor : NetworkBehaviour {
 
 
 	void Update(){
+		
+		
 		moveFB = Input.GetAxis ("Horizontal") * PlayerSpeed;
 		moveLR = Input.GetAxis ("Vertical") * PlayerSpeed;
 
