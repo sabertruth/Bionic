@@ -4,8 +4,11 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
 
+//Accessing of Photon Server
+
 public class Connect_To_Server_2 : MonoBehaviourPunCallbacks
 {
+    //Conenction to Photon Server
 
     private void Start()
     {
