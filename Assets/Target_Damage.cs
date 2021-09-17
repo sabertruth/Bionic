@@ -1,7 +1,7 @@
-
 using UnityEngine;
+using Mirror;
 
-public class Target : MonoBehaviour
+public class Target : NetworkBehaviour
 {
    public float health = 100f;
 
