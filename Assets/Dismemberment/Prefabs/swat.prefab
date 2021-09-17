@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2154135058509649886
+--- !u!1 &21334004910840502
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7171947412188222481}
-  - component: {fileID: 5788464495111312577}
+  - component: {fileID: 6118295202211993601}
   m_Layer: 0
-<<<<<<< HEAD:Assets/Dismemberment/Prefabs/AK-47.prefab
-  m_Name: Point Light
-=======
   m_Name: swat:RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,26 +201,22 @@ GameObject:
   - component: {fileID: 728834571852098128}
   m_Layer: 0
   m_Name: swat:RightHandMiddle4
->>>>>>> 32c9a24b600a8f52a1c80c88590a3dcf2a94beac:Assets/Dismemberment/Prefabs/swat.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7171947412188222481
+--- !u!4 &728834571852098128
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2154135058509649886}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -5.089, z: 0}
+  m_GameObject: {fileID: 718854472161926503}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.028803, y: 8.2607127e-10, z: -0.000000001090654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-<<<<<<< HEAD:Assets/Dismemberment/Prefabs/AK-47.prefab
-  m_Father: {fileID: 893486902234208515}
-=======
   m_Father: {fileID: 9185282776220835076}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -293,74 +285,30 @@ Transform:
   - {fileID: 2397309328470331455}
   - {fileID: 3929536923517995229}
   m_Father: {fileID: 8670826639638003622}
->>>>>>> 32c9a24b600a8f52a1c80c88590a3dcf2a94beac:Assets/Dismemberment/Prefabs/swat.prefab
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &5788464495111312577
-Light:
+--- !u!1 &930090484982365970
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Dismemberment/Prefabs/AK-47.prefab
-  m_GameObject: {fileID: 2154135058509649886}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!1 &4041682097307989660
-=======
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9185282776220835076}
+  m_Layer: 0
+  m_Name: swat:RightHandMiddle3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9185282776220835076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930090484982365970}
   m_LocalRotation: {x: 0.000000059604645, y: 0.0000000298086, z: 0.000000044699302,
     w: 1}
@@ -372,7 +320,6 @@ Light:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &939759600675210376
->>>>>>> 32c9a24b600a8f52a1c80c88590a3dcf2a94beac:Assets/Dismemberment/Prefabs/swat.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,40 +327,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 893486902234208515}
-  - component: {fileID: 6542938586685159185}
-  - component: {fileID: 7408863930853023005}
+  - component: {fileID: 6312353012548547716}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: swat:Neck1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &893486902234208515
+--- !u!4 &6312353012548547716
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4041682097307989660}
-  m_LocalRotation: {x: 0, y: -0.7112411, z: 0, w: 0.7029481}
-  m_LocalPosition: {x: -0.596, y: 0.034, z: -0.003}
+  m_GameObject: {fileID: 939759600675210376}
+  m_LocalRotation: {x: 0, y: 0, z: 2.7084222e-35, w: 1}
+  m_LocalPosition: {x: -4.0753376e-16, y: 0.0434, z: 0.009269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7171947412188222481}
-  m_Father: {fileID: 4967244242836980054}
+  - {fileID: 7545035909097779518}
+  m_Father: {fileID: 6729267499410194625}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90.672, z: 0}
---- !u!198 &6542938586685159185
-ParticleSystem:
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1287799791099516850
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Dismemberment/Prefabs/AK-47.prefab
-  m_GameObject: {fileID: 4041682097307989660}
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7055170316895654104}
@@ -603,7 +545,6 @@ ParticleSystem:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694903826790435901}
->>>>>>> 32c9a24b600a8f52a1c80c88590a3dcf2a94beac:Assets/Dismemberment/Prefabs/swat.prefab
   serializedVersion: 7
   lengthInSec: 0.1
   simulationSpeed: 1
@@ -5361,10 +5302,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
-<<<<<<< HEAD:Assets/Dismemberment/Prefabs/AK-47.prefab
---- !u!199 &7408863930853023005
-ParticleSystemRenderer:
-=======
 --- !u!199 &5279028025426487228
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -7595,74 +7532,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
->>>>>>> 32c9a24b600a8f52a1c80c88590a3dcf2a94beac:Assets/Dismemberment/Prefabs/swat.prefab
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8908874234425109053}
+  m_Layer: 0
+  m_Name: swat:Hips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8908874234425109053
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Dismemberment/Prefabs/AK-47.prefab
-  m_GameObject: {fileID: 4041682097307989660}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_RenderMode: 0
-  m_SortMode: 0
-  m_MinParticleSize: 0
-  m_MaxParticleSize: 0.5
-  m_CameraVelocityScale: 0
-  m_VelocityScale: 0
-  m_LengthScale: 2
-  m_SortingFudge: 0
-  m_NormalDirection: 1
-  m_ShadowBias: 0
-  m_RenderAlignment: 0
-  m_Pivot: {x: 0, y: 0, z: 0}
-  m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
-  m_EnableGPUInstancing: 1
-  m_ApplyActiveColorSpace: 1
-  m_AllowRoll: 1
-  m_FreeformStretching: 0
-  m_RotateWithStretchDirection: 1
-  m_VertexStreams: 00010304
-  m_Mesh: {fileID: 0}
-  m_Mesh1: {fileID: 0}
-  m_Mesh2: {fileID: 0}
-  m_Mesh3: {fileID: 0}
-  m_MaskInteraction: 0
---- !u!1 &4967244242836561270
-=======
   m_GameObject: {fileID: 8756378973805136532}
   m_LocalRotation: {x: 1.0234468e-15, y: -0.0000000125804505, z: 0.00000039506045,
     w: 1}
@@ -7676,7 +7561,6 @@ GameObject:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9050318728181450030
->>>>>>> 32c9a24b600a8f52a1c80c88590a3dcf2a94beac:Assets/Dismemberment/Prefabs/swat.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7684,120 +7568,114 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4967244242836980054}
-  - component: {fileID: 4967244242835685750}
-  - component: {fileID: 4967244242834555830}
-  - component: {fileID: 325534612225622655}
-  - component: {fileID: 3975596957598603919}
+  - component: {fileID: 589568979757468517}
   m_Layer: 0
-  m_Name: AK-47
+  m_Name: swat:RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4967244242836980054
+--- !u!4 &589568979757468517
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Dismemberment/Prefabs/AK-47.prefab
-  m_GameObject: {fileID: 4967244242836561270}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.1769, y: -0.0262, z: 0.0514}
-=======
   m_GameObject: {fileID: 9050318728181450030}
   m_LocalRotation: {x: 0.000000014901163, y: 2.0932269e-12, z: 0.000000014901159,
     w: 1}
   m_LocalPosition: {x: 0.10577313, y: -0.0017504537, z: 0.02287372}
->>>>>>> 32c9a24b600a8f52a1c80c88590a3dcf2a94beac:Assets/Dismemberment/Prefabs/swat.prefab
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 893486902234208515}
-  m_Father: {fileID: 0}
+  - {fileID: 7673797488961203975}
+  m_Father: {fileID: 6576927523158200563}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
---- !u!33 &4967244242835685750
-MeshFilter:
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9071524479502386080
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4967244242836561270}
-  m_Mesh: {fileID: 4300000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
---- !u!23 &4967244242834555830
-MeshRenderer:
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4993382241407251102}
+  - component: {fileID: 2257563627101185889}
+  - component: {fileID: 5091834156698880057}
+  m_Layer: 0
+  m_Name: Camera_player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4993382241407251102
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4967244242836561270}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 484464b8ff3440e40bae6737848b8e21, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &325534612225622655
-BoxCollider:
+  m_GameObject: {fileID: 9071524479502386080}
+  m_LocalRotation: {x: 0.00088193815, y: 0.6668184, z: -0.0015042095, w: -0.7452183}
+  m_LocalPosition: {x: -0.076, y: 1.774, z: 0.628}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7745136012526189559}
+  m_Father: {fileID: 3581789352388355230}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.04, y: 276.35602, z: 0.196}
+--- !u!20 &2257563627101185889
+Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4967244242836561270}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 9071524479502386080}
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8715247, y: 0.23632376, z: 0.033369455}
-  m_Center: {x: -0.116303064, y: -0.033833623, z: 0.00000012168742}
---- !u!114 &3975596957598603919
-MonoBehaviour:
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.1
+  far clip plane: 1000
+  field of view: 90
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &5091834156698880057
+AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4967244242836561270}
+  m_GameObject: {fileID: 9071524479502386080}
   m_Enabled: 1
-<<<<<<< HEAD:Assets/Dismemberment/Prefabs/AK-47.prefab
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda6beb06bc862c46a6ab95c3c50cb42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  fpsCam: {fileID: 0}
-  muzzleFlash: {fileID: 6542938586685159185}
-=======
 --- !u!1 &9130481930801984436
 GameObject:
   m_ObjectHideFlags: 0
@@ -7897,4 +7775,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7745136012526051703}
   m_PrefabAsset: {fileID: 0}
->>>>>>> 32c9a24b600a8f52a1c80c88590a3dcf2a94beac:Assets/Dismemberment/Prefabs/swat.prefab
