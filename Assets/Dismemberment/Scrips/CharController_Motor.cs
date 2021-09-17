@@ -50,6 +50,15 @@ public class CharController_Motor : NetworkBehaviour {
 		//rotX = Input.GetKey (KeyCode.Joystick1Button4);
 		//rotY = Input.GetKey (KeyCode.Joystick1Button5);
 
+		//Stops the camera from turning 360
+
+		//this.transform.Rotate = Quaternion.Euler(0, rotY, 0);
+		//cam.Rotate = Quaternion.Euler(rotX, rotY, 0);
+
+
+
+		
+
 		CheckForWaterHeight ();
 
 
@@ -68,12 +77,13 @@ public class CharController_Motor : NetworkBehaviour {
 		movement = transform.rotation * movement;
 		character.Move (movement * Time.deltaTime);
 
-		Animator.SetBool("isWalking", PlayerSpeed > moveFB);
+		Animator.SetBool("isWalking", PlayerSpeed > 9.0f);
 	}
 
 
 	void CameraRotation(GameObject cam, float rotX, float rotY){		
 		transform.Rotate (0, rotX * Time.deltaTime, 0);
 		cam.transform.Rotate (-rotY * Time.deltaTime, 0, 0);
+
 	}
 }
