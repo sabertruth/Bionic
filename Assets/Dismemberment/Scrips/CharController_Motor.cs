@@ -1,4 +1,4 @@
-﻿using Mirror;
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -68,7 +68,7 @@ public class CharController_Motor : NetworkBehaviour {
 		movement = transform.rotation * movement;
 		character.Move (movement * Time.deltaTime);
 
-		Animator.SetBool("isWalking", PlayerSpeed > moveFB);
+		//Animator.SetBool("isWalking", PlayerSpeed > moveFB);
 	}
 
 
