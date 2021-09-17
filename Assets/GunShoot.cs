@@ -9,7 +9,7 @@ public class GunShoot : NetworkBehaviour
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -27,7 +27,7 @@ public class GunShoot : NetworkBehaviour
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-
+    
 
             Target target = hit.transform.GetComponent<Target>();
             if(target != null)
