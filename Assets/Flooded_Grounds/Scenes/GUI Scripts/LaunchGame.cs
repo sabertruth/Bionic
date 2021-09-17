@@ -9,6 +9,6 @@ public class LaunchGame : MonoBehaviour
     //Loads next scene in build que, the game scene
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Scene_A");
     }
 }
