@@ -1,6 +1,7 @@
 using UnityEngine;
+using Mirror;
 
-public class GunShoot : MonoBehaviour
+public class GunShoot : NetworkBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
