@@ -7712,23 +7712,6 @@ MonoBehaviour:
   impactEffect: {fileID: 1570927096764274, guid: 643639841fb531e4ba8097fed4eb9ac7,
     type: 3}
   gunSound: {fileID: 0}
---- !u!114 &1862818687210010421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7745136012526020567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 0
-  serverOnly: 0
-  visible: 0
-  m_AssetId: b69ca0ee6720e31449463d4ba9a31d49
-  hasSpawned: 0
 --- !u!1 &7807995712591651367
 GameObject:
   m_ObjectHideFlags: 0
