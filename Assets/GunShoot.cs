@@ -1,15 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class GunShoot : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 15f;
-
+    public int ammo;
+    public bool isFiring;
+    
+    public Text ammoDisplay;
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
-    public AudioSource gunSound;
+    public AudioSource gunSound;    
     
     private float nextTimeToFire = 0f;
     
@@ -25,15 +32,23 @@ public class GunShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
-        {
-            
+        ammoDisplay.text = ammo.ToString();
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && !isFiring && ammo > 0)
+        {   
+            isFiring = true;
             nextTimeToFire = Time.time + 1f/fireRate;
             gunSound.Play();
             Shoot();
+            ammo--;
+            isFiring = false;
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ammo = 25;
         }
     }
 
+    
     void Shoot()
     {
         muzzleFlash.Play();
