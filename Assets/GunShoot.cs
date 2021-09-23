@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GunShoot : MonoBehaviour
 {
-    public float damage = 10f;
+    public float damage = 25f;
     public float range = 100f;
     public float fireRate = 15f;
     public int ammo;
@@ -57,7 +57,6 @@ public class GunShoot : MonoBehaviour
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-
 
             Target target = hit.transform.GetComponent<Target>();
             if(target != null)
