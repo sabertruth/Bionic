@@ -20,7 +20,7 @@ public class CharController_Motor : NetworkBehaviour
     CharacterController character;
     [Header("Components")]
     public Animator animator;
-    Animator Animator;
+    //Animator Animator;
     public GameObject cam;
 
     float
@@ -45,12 +45,6 @@ public class CharController_Motor : NetworkBehaviour
 	*/
     void Start()
     {
-        //LockCursor ();
-        //For Jump---------------------------
-        /*
-		rb = GetComponent<Rigidbody>();
-		col = GetComponent<CapsuleCollider>();
-		*/
         character = GetComponent<CharacterController>();
         if (Application.isEditor)
         {
@@ -128,7 +122,7 @@ public class CharController_Motor : NetworkBehaviour
             PlayerSpeed = WalkSpeed;
         }
 			// Player Crouch-------------------------------
-        while (Input.GetKey(KeyCode.C))
+        if (Input.GetKey(KeyCode.C))
         {
             animator.SetFloat("isCrouch", 1);
 			PlayerSpeed = 0.0f;
@@ -138,7 +132,24 @@ public class CharController_Motor : NetworkBehaviour
             animator.SetFloat("isCrouch", 0);
 			PlayerSpeed = WalkSpeed;
         }
-
+            //Player Relaod----------------------------------
+        if (Input.GetKey(KeyCode.R))
+        {
+            animator.SetFloat("isReloading", 1);
+        }
+        else
+        {
+            animator.SetFloat("isReloading", 0);
+        }
+            //Player shoot recoil---------------------------
+        if (Input.GetButton("Fire1"))
+        {
+        animator.SetFloat("isShooting", 1);
+        }
+        else
+        {
+            animator.SetFloat("isShooting", 0);
+        }
         
     }
 

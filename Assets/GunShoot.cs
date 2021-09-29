@@ -11,13 +11,14 @@ public class GunShoot : MonoBehaviour
     public float fireRate = 15f;
     public int ammo;
     public bool isFiring;
+
     
     public Text ammoDisplay;
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
-    public AudioSource gunSound;    
-    
+    public AudioSource gunSound;
+
     private float nextTimeToFire = 0f;
     
 
@@ -34,7 +35,7 @@ public class GunShoot : MonoBehaviour
     {
         ammoDisplay.text = ammo.ToString();
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && !isFiring && ammo > 0)
-        {   
+        {  
             isFiring = true;
             nextTimeToFire = Time.time + 1f/fireRate;
             gunSound.Play();
@@ -42,7 +43,7 @@ public class GunShoot : MonoBehaviour
             ammo--;
             isFiring = false;
         }
-        if (Input.GetKeyDown(KeyCode.R))
+         if (Input.GetKey(KeyCode.R))
         {
             ammo = 25;
         }
