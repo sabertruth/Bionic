@@ -5624,7 +5624,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 406bb9fbcae294e498a479e85ddbc7e0, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -5741,18 +5741,14 @@ MonoBehaviour:
   PlayerSpeed: 10
   RunSpeed: 20
   WalkSpeed: 10
-  isRunning: 1
+  isRunning: 0
   JumpHeight: 10
+  isWalking: 0
   MouseSensitivity: 30
   WaterHeight: 15.5
   animator: {fileID: 5159315107455391828}
   cam: {fileID: 9071524479502386080}
   webGLRightClickRotation: 0
-  rb: {fileID: 4150529161163870543}
-  col: {fileID: 1948733691997100904}
-  groundedLayers:
-    serializedVersion: 2
-    m_Bits: 1
 --- !u!114 &1035602833777818169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7973,13 +7969,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9071524479502386080}
-  m_LocalRotation: {x: 0.00088193815, y: 0.6668184, z: -0.0015042095, w: -0.7452183}
-  m_LocalPosition: {x: -0.0545, y: 1.834, z: 0.672}
+  m_LocalRotation: {x: -0.086076185, y: 0.6768402, z: -0.10671979, w: -0.72324914}
+  m_LocalPosition: {x: 2.545, y: 2.345, z: 0.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3581789352388355230}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.04, y: 276.35602, z: 0.196}
+  m_LocalEulerAnglesHint: {x: 15.603, y: 274.10602, z: 2.252}
 --- !u!20 &2257563627101185889
 Camera:
   m_ObjectHideFlags: 0
