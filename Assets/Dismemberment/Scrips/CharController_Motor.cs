@@ -90,7 +90,7 @@ public class CharController_Motor : NetworkBehaviour
             animator.SetFloat("isCrouch", 0);
 			PlayerSpeed = WalkSpeed;
         }
-        while (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             animator.SetFloat("backward", 1);
         }
