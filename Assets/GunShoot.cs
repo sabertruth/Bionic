@@ -10,7 +10,9 @@ public class GunShoot : MonoBehaviour
     public float range = 100f;
     public float fireRate = 15f;
     public int ammo;
-    public bool isFiring;
+
+    //public bool isFiring;
+    public int Maxammo = 30;
 
     
     public Text ammoDisplay;
@@ -19,9 +21,11 @@ public class GunShoot : MonoBehaviour
     public GameObject impactEffect;
     public AudioSource gunSound;
 
-    private float nextTimeToFire = 0f;
-    
+    public Animator animator;
 
+    private float nextTimeToFire = 0f;
+
+    
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
@@ -34,22 +38,29 @@ public class GunShoot : MonoBehaviour
     void Update()
     {
         ammoDisplay.text = ammo.ToString();
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && !isFiring && ammo > 0)
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && ammo > 0)
         {  
-            isFiring = true;
+            //isFiring = true;
+            animator.SetFloat("isShooting", 1);
             nextTimeToFire = Time.time + 1f/fireRate;
             gunSound.Play();
             Shoot();
             ammo--;
-            isFiring = false;
+            animator.SetFloat("isShooting", 0);
+            //isFiring = false;
         }
-         if (Input.GetKey(KeyCode.R))
+         if (Input.GetKey(KeyCode.R)) //&& ammo < Maxammo)
         {
-            ammo = 25;
+            //isFiring = false;
+            animator.SetFloat("isReloading", 1);
+            ammo = 30;
+        }
+        else
+        {
+            animator.SetFloat("isReloading", 0);
         }
     }
 
-    
     void Shoot()
     {
         muzzleFlash.Play();

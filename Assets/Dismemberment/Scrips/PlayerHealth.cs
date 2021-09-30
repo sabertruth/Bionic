@@ -7,15 +7,15 @@ public class PlayerHealth : MonoBehaviour
 {
     public Slider HealthBar;
     public float Health = 100;
-    private float _currentHealth;
+    private float currentHealth;
     
     void Start ()
     {
-        _currentHealth = Health;
+        currentHealth = Health;
     }    public void TakeDamage(float damage)
     {
-        _currentHealth -= damage;
-        HealthBar.value = _currentHealth;
+        currentHealth -= damage;
+        HealthBar.value = currentHealth;
     }
 
     
