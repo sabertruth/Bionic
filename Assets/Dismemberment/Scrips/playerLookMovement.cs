@@ -7,7 +7,7 @@ public class playerLookMovement : MonoBehaviour
     Vector2 _mouseAbsolute;
     Vector2 _smoothMouse;
  
-    public Vector2 clampInDegrees = new Vector2(360, 180);
+    public Vector2 clampInDegrees = new Vector2(360, 160);
     public Vector2 sensitivity = new Vector2(2, 2);
     public Vector2 smoothing = new Vector2(3, 3);
     public Vector2 targetDirection;
@@ -30,6 +30,7 @@ public class playerLookMovement : MonoBehaviour
  
     void Update()
     {     
+
         // Allow the script to clamp based on a desired target value.
         var targetOrientation = Quaternion.Euler(targetDirection);
         var targetCharacterOrientation = Quaternion.Euler(targetCharacterDirection);
@@ -77,5 +78,7 @@ public class playerLookMovement : MonoBehaviour
             var yRotation = Quaternion.AngleAxis(_mouseAbsolute.x, transform.InverseTransformDirection(Vector3.up));
             transform.localRotation *= yRotation;
         }
+
+        
     }
 }

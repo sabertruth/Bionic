@@ -20,9 +20,6 @@ public class CharController_Motor : NetworkBehaviour
     [Header("Components")]
     public Animator animator;
 
-    public GameObject cam;
-    // private float xRotation = 0f;
-
     float
 
             moveHorizontal,
@@ -63,20 +60,6 @@ public class CharController_Motor : NetworkBehaviour
         moveHorizontal = Input.GetAxis("Horizontal") * PlayerSpeed;
         moveVertical = Input.GetAxis("Vertical") * PlayerSpeed;
 
-        // float mouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
-        // float mouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
-        
-        // xRotation -= mouseY; //---xRotation -= xRotation -mouseY;  use for code review
-
-        // xRotation = Mathf.Clamp(xRotation, -70f, 80f);
-
-        // //Movement Camera-------------------------------------
-        // cam.transform.localRotation = Quaternion.Euler(xRotation,0,0);
-
-        // //Rotates the player on the X axis of mouse
-        // transform.rotation(0,0,0);
-
-
 
         CheckForWaterHeight();
 
@@ -112,5 +95,9 @@ public class CharController_Motor : NetworkBehaviour
         {
             animator.SetFloat("backward", 1);
         }
+
+
+
+
     }
 }
