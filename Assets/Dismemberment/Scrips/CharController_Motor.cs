@@ -19,7 +19,9 @@ public class CharController_Motor : NetworkBehaviour
     CharacterController character;
     [Header("Components")]
     public Animator animator;
+
     public GameObject cam;
+    // private float xRotation = 0f;
 
     float
 
@@ -36,6 +38,7 @@ public class CharController_Motor : NetworkBehaviour
     void Start()
     {
         character = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
         if (Application.isEditor)
         {
             MouseSensitivity = MouseSensitivity * 1.5f;
@@ -56,10 +59,25 @@ public class CharController_Motor : NetworkBehaviour
 
     void Update()
     {
-        //Movement-------------------------------------
+        //Movement Player-------------------------------------
         moveHorizontal = Input.GetAxis("Horizontal") * PlayerSpeed;
         moveVertical = Input.GetAxis("Vertical") * PlayerSpeed;
-		
+
+        // float mouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
+        // float mouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
+        
+        // xRotation -= mouseY; //---xRotation -= xRotation -mouseY;  use for code review
+
+        // xRotation = Mathf.Clamp(xRotation, -70f, 80f);
+
+        // //Movement Camera-------------------------------------
+        // cam.transform.localRotation = Quaternion.Euler(xRotation,0,0);
+
+        // //Rotates the player on the X axis of mouse
+        // transform.rotation(0,0,0);
+
+
+
         CheckForWaterHeight();
 
         Vector3 movement = new Vector3(moveHorizontal, gravity, moveVertical);
