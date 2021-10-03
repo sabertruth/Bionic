@@ -41,12 +41,12 @@ public class GunShoot : MonoBehaviour
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && ammo > 0)
         {  
             //isFiring = true;
-            animator.SetFloat("isShooting", 1);
+            animator.SetBool("isShooting", true);
             nextTimeToFire = Time.time + 1f/fireRate;
             gunSound.Play();
             Shoot();
             ammo--;
-            animator.SetFloat("isShooting", 0);
+            animator.SetBool("isShooting", false);
             //isFiring = false;
         }
          if (Input.GetKey(KeyCode.R)) //&& ammo < Maxammo)

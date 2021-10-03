@@ -96,6 +96,14 @@ public class CharController_Motor : NetworkBehaviour
             animator.SetFloat("backward", 1);
         }
 
+        if (Input.GetButton("Fire2"))
+        {
+            animator.SetBool("isADSWeapon", true);
+        }
+        else
+        {
+            animator.SetBool("isADSWeapon", false);
+        }
 
 
 
