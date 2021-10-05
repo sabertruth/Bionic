@@ -1388,6 +1388,7 @@ GameObject:
   - component: {fileID: 696359659}
   - component: {fileID: 696359662}
   - component: {fileID: 696359663}
+  - component: {fileID: 696359664}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1481,7 +1482,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 696359658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c4bdae45dfbd644694991c40e7c7acb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a3850edc4814fc429a118c74552c4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &696359664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696359658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3850edc4814fc429a118c74552c4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &812301733
@@ -1632,6 +1645,7 @@ GameObject:
   - component: {fileID: 834389979}
   - component: {fileID: 834389978}
   - component: {fileID: 834389977}
+  - component: {fileID: 834389980}
   m_Layer: 5
   m_Name: Launch Game Button
   m_TagString: Untagged
@@ -1702,9 +1716,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 696359663}
-        m_TargetAssemblyTypeName: LaunchGame, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 1839048485}
+        m_TargetAssemblyTypeName: LaunchClassScene, Assembly-CSharp
+        m_MethodName: LaunchTheClassScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1712,7 +1726,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &834389978
 MonoBehaviour:
@@ -1752,6 +1766,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834389975}
   m_CullTransparentMesh: 1
+--- !u!114 &834389980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834389975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3850edc4814fc429a118c74552c4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884664518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3571,9 +3597,9 @@ GameObject:
   - component: {fileID: 1839048479}
   - component: {fileID: 1839048481}
   - component: {fileID: 1839048480}
-  - component: {fileID: 1839048482}
   - component: {fileID: 1839048483}
   - component: {fileID: 1839048484}
+  - component: {fileID: 1839048485}
   m_Layer: 5
   m_Name: Main Menu Panel
   m_TagString: Untagged
@@ -3642,18 +3668,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839048478}
   m_CullTransparentMesh: 1
---- !u!114 &1839048482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839048478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c4bdae45dfbd644694991c40e7c7acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1839048483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3676,6 +3690,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 447f9b295ace3b24ca8a9d95d3c8a2f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1839048485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839048478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3850edc4814fc429a118c74552c4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1902203541

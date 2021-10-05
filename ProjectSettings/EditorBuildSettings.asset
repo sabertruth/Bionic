@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Flooded_Grounds/Scenes/Main Menu GUI.unity
     guid: 6e6630f67034d7444ba9eecf85d69cbc
   - enabled: 1
+    path: Assets/Flooded_Grounds/Scenes/Choose Class Scene.unity
+    guid: c126ccd77a902e54c932fe3792fc0fc0
+  - enabled: 1
     path: Assets/Flooded_Grounds/Scenes/Scene_A.unity
     guid: c0d944ca9defd20449bc336e50d75a08
   - enabled: 1
