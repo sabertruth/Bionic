@@ -5955,13 +5955,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  Control: {x: 0, y: 0, z: 0}
-  c: {r: 0, g: 0, b: 0, a: 0}
   PlayerSpeed: 10
   RunSpeed: 20
   WalkSpeed: 10
   JumpHeight: 10
   WaterHeight: 15.5
+  characterBody: {fileID: 2254275742234642237}
+  playerCamera: {fileID: 5033409462993521236}
   animator: {fileID: 5159315107455391828}
 --- !u!114 &-7641196983390522362
 MonoBehaviour:
@@ -8023,7 +8023,7 @@ Camera:
   field of view: 70.43519
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 1879
@@ -8058,7 +8058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e460e3a9c5c0bb44fb6f44c74f9a614b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clampInDegrees: {x: 360, y: 160}
+  clampInDegrees: {x: 360, y: 150}
   sensitivity: {x: 1, y: 1}
   smoothing: {x: 3, y: 3}
   targetDirection: {x: 0, y: 0}
