@@ -21,8 +21,8 @@ public class PlayerHealth : MonoBehaviour
 
         //Player death due to health being less than zero.
         if(currentHealth <= 0)
-        {   
-            //
+        {
+            Destroy(this.gameObject);
             enemyPoints = enemyPoints + 50;
         }
     }
