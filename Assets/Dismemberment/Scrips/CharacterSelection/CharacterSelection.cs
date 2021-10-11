@@ -27,7 +27,7 @@ public class CharacterSelection : NetworkBehaviour
                 characterInstance.SetActive(false);
                 characterInstances.Add (characterInstance);
             }
-        }
+        }  
 
         characterInstances[currentCharacterIndex].SetActive(true);
         characterNameText.text = characters[currentCharacterIndex].CharacterName;
