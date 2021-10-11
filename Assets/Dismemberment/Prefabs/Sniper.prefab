@@ -8494,7 +8494,8 @@ MonoBehaviour:
   ammoDisplay: {fileID: 2979256470510679702}
   fpsCam: {fileID: 5033409462993521236}
   muzzleFlash: {fileID: 8457299964312341936}
-  impactEffect: {fileID: 0}
+  impactEffect: {fileID: 1714681308540598, guid: 5cbc537826220e04592d5a41a0dd985f,
+    type: 3}
   gunSound: {fileID: 4470333055109194397}
   animator: {fileID: 5159315107455391828}
 --- !u!1 &6677134549124715102
