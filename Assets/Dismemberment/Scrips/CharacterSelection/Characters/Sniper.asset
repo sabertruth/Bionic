@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d140e6037e30440bf67d6b0f3bf2a8, type: 3}
   m_Name: Sniper
   m_EditorClassIdentifier: 
-  characterName: 
-  characterPreviewPrefab: {fileID: 0}
-  gameplayCharacterPrefab: {fileID: 0}
+  characterName: Sniper
+  characterPreviewPrefab: {fileID: 919132149155446097, guid: 62d8c09930f5ec94c96ccc29c98645b5,
+    type: 3}
+  gameplayCharacterPrefab: {fileID: 2254275742234642237, guid: a7d9eeb4a4d195e43b5db2217ad93966,
+    type: 3}
