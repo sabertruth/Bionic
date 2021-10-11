@@ -123,7 +123,7 @@ public class CharController_Motor : NetworkBehaviour
         //     animator.ResetTrigger("isJump");
         // }
 
-        if (transform.position.y < 5.0f)
+        if (transform.position.y < -5.0f)
         {
             Destroy(characterBody);
         }
