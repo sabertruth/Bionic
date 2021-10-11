@@ -20,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.value = currentHealth;
 
         //Player death due to health being less than zero.
+
         if(currentHealth <= 0)
         {
             Destroy(this.gameObject);
