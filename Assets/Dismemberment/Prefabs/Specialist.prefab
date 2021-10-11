@@ -1276,7 +1276,7 @@ MonoBehaviour:
   WaterHeight: 15.5
   characterBody: {fileID: 3318081001367211499}
   playerCamera: {fileID: 7317682495204434364}
-  animator: {fileID: 0}
+  animator: {fileID: 4755817028302622030}
 --- !u!114 &3588007563594611539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1919,8 +1919,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 45
   range: 65
-  fireRate: 8
-  ammo: 0
+  fireRate: 2
+  ammo: 8
   Maxammo: 8
   ammoDisplay: {fileID: 2834038319520323286}
   fpsCam: {fileID: 7317682495204434364}
@@ -9282,7 +9282,7 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

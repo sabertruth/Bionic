@@ -12,7 +12,7 @@ public class GunShoot : MonoBehaviour
     public int ammo;
 
     //public bool isFiring;
-    public int Maxammo = 30;
+    public int Maxammo;
 
     
     public Text ammoDisplay;
@@ -53,7 +53,7 @@ public class GunShoot : MonoBehaviour
         {
             //isFiring = false;
             animator.SetFloat("isReloading", 1);
-            ammo = 30;
+            ammo = Maxammo;
         }
         else
         {

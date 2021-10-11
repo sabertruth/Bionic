@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d140e6037e30440bf67d6b0f3bf2a8, type: 3}
   m_Name: Specialist
   m_EditorClassIdentifier: 
-  characterName: 
-  characterPreviewPrefab: {fileID: 0}
-  gameplayCharacterPrefab: {fileID: 0}
+  characterName: Specialist
+  characterPreviewPrefab: {fileID: 919132149155446097, guid: cfc2b7e93774b2c4c8191c888c7c3c59,
+    type: 3}
+  gameplayCharacterPrefab: {fileID: 3318081001367211499, guid: 07b1f0ce08fa51944952fd91d8f94a89,
+    type: 3}
