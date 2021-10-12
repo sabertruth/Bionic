@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shootable
   - spawn
+  - ENEMY
   layers:
   - Default
   - TransparentFX
