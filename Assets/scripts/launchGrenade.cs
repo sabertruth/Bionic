@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class launchGrenade : MonoBehaviour
 {
-    public Transform spawnPoint;
-    public GameObject grenade;
+    public float throwForce = 40f;
+    public GameObject grenadeprefab;
 
     float range =10f;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    //Launch grenade when q is pressed
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Q))
@@ -24,7 +18,8 @@ public class launchGrenade : MonoBehaviour
 
     void Launch()
     {
-        GameObject grenadeInstance = Instantiate(grenade, spawnPoint.position, spawnPoint.rotation);
-        grenadeInstance.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * range, ForceMode.Impulse);
+        GameObject grenade = Instantiate(grenadeprefab, transform.position, transform.rotation);
+        Rigidbody rb = grenade.GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
     }
 }
