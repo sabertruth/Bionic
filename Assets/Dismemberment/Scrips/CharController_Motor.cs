@@ -128,4 +128,5 @@ public class CharController_Motor : NetworkBehaviour
             Destroy(characterBody);
         }
     }
+
 }

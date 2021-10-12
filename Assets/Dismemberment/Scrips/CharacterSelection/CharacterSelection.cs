@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Mirror;
 using TMPro;
@@ -11,6 +12,7 @@ public class CharacterSelection : NetworkBehaviour
     [SerializeField] private TMP_Text characterNameText = default;
     [SerializeField] private float turnSpeed = 90f;
     [SerializeField] private Character[] characters = default;
+    public Transform[] spawn_points;
 
     private int currentCharacterIndex = 0;
     private List<GameObject> characterInstances = new List<GameObject>();
@@ -51,7 +53,10 @@ public class CharacterSelection : NetworkBehaviour
     [Command(requiresAuthority = false)]
     public void CmdSelect( int characterIndex, NetworkConnectionToClient sender = null)
     {
-        GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab);
+        Transform t_spawn = spawn_points[UnityEngine.Random.Range(0,spawn_points.Length)];
+
+        GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab, t_spawn.position, t_spawn.rotation);
+
         NetworkServer.Spawn (characterInstance, sender);
     }
 

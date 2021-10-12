@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class GunShoot : MonoBehaviour
 {
-    public float damage = 25f;
-    public float range = 100f;
-    public float fireRate = 15f;
+    public float damage;
+    public float range;
+    public float fireRate;
     public int ammo;
 
     //public bool isFiring;
@@ -74,6 +74,12 @@ public class GunShoot : MonoBehaviour
             if(target != null)
             {
                 target.TakeDamage(damage);
+            }
+            
+            //Die
+            if (hit.transform.tag.Equals("Player")){
+
+                Destroy(hit.collider.gameObject);
             }
 
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
