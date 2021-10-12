@@ -6578,8 +6578,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3813888071528143782}
   - {fileID: 7745136012526189559}
+  - {fileID: 3813888071528143782}
   m_Father: {fileID: 5179134365935427027}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7188,29 +7188,6 @@ Transform:
   m_Father: {fileID: 1204419830408018555}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2690833714237879008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3813888071528564614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda6beb06bc862c46a6ab95c3c50cb42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 25
-  range: 100
-  fireRate: 15
-  ammo: 0
-  Maxammo: 0
-  ammoDisplay: {fileID: 2979256470510679702}
-  fpsCam: {fileID: 5033409462993521236}
-  muzzleFlash: {fileID: 8457299964312341936}
-  impactEffect: {fileID: 2434000526301005874}
-  gunSound: {fileID: 9088556674884362341}
-  animator: {fileID: 5159315107455391828}
 --- !u!82 &9088556674884362341
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7307,6 +7284,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2690833714237879008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3813888071528564614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda6beb06bc862c46a6ab95c3c50cb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
+  range: 100
+  fireRate: 15
+  ammo: 0
+  Maxammo: 0
+  ammoDisplay: {fileID: 2979256470510679702}
+  fpsCam: {fileID: 5033409462993521236}
+  muzzleFlash: {fileID: 8457299964312341936}
+  impactEffect: {fileID: 2434000526301005874}
+  gunSound: {fileID: 9088556674884362341}
+  animator: {fileID: 5159315107455391828}
 --- !u!1 &3941522742453935736
 GameObject:
   m_ObjectHideFlags: 0
@@ -9486,7 +9486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b3248db90896a6f46a0cdb09d671a88f, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b3248db90896a6f46a0cdb09d671a88f, type: 3}
       propertyPath: m_LocalScale.x
@@ -9571,7 +9571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7d0124d3bdb8cba4f834aae3a9962ddc, type: 3}
       propertyPath: m_LocalScale.x
