@@ -5800,6 +5800,7 @@ GameObject:
   - component: {fileID: 3474804902876939993}
   - component: {fileID: 3913233383013580851}
   - component: {fileID: 8986375078949830374}
+  - component: {fileID: 3755696851158333470}
   m_Layer: 0
   m_Name: swat
   m_TagString: Player
@@ -6055,12 +6056,14 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   PlayerSpeed: 10
-  RunSpeed: 20
   WalkSpeed: 10
   JumpHeight: 10
   WaterHeight: 15.5
+  sprintMultiplier: 2
+  isSprinting: 0
   characterBody: {fileID: 2254275742234642237}
   playerCamera: {fileID: 5033409462993521236}
+  character: {fileID: 8410035315091561274}
   animator: {fileID: 5159315107455391828}
 --- !u!114 &-7641196983390522362
 MonoBehaviour:
@@ -6131,7 +6134,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: 10
-  jumpForce: 100
+  jumpForce: 14
+--- !u!114 &3755696851158333470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2254275742234642237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0405026726ec04490485e7afdbc795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedBoost: 5
+  reducedHeight: 1
 --- !u!1 &2316165421490213963
 GameObject:
   m_ObjectHideFlags: 0
@@ -6576,7 +6593,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3559923350970390104}
   - component: {fileID: 8918611991290754292}
-  - component: {fileID: 7915191002584801959}
   m_Layer: 0
   m_Name: WeaponHolder
   m_TagString: Untagged
@@ -6613,21 +6629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedWeapon: 0
---- !u!114 &7915191002584801959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3169059034709217092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff2f9ee9e9fab094e80de8095cc47564, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  throwForce: 10
-  grenadeprefab: {fileID: 7072827371759539946, guid: 3b7580a9e89ff394198e9f15c79616e0,
-    type: 3}
 --- !u!1 &3275245594263754823
 GameObject:
   m_ObjectHideFlags: 0
