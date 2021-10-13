@@ -4,22 +4,30 @@ using UnityEngine;
 
 public class CrouchSprint : MonoBehaviour
 {
+    //Varibles
     CharController_Motor MoveScript;
-    public float speedBoost = 8f;
-
+    CharacterController controller;
     CapsuleCollider playerCol;
+    
+    public float speedBoost = 8f;
     float  originalHeight;
+    float  originalheight;
     public float reducedHeight;
-    // Start is called before the first frame update
+    public Animator anim;
+    
+    // Gets the correct game components
     void Start()
     {
         playerCol = GetComponent<CapsuleCollider>();
         MoveScript = GetComponent<CharController_Motor>();
+        controller = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
 
         originalHeight = playerCol.height;
+        originalheight = controller.height;
     }
-
-    // Update is called once per frame
+    
+    // Waits for input from user and determines if the user wants to crouch or run
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.LeftShift))
@@ -33,19 +41,27 @@ public class CrouchSprint : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
             Crouch();
+            anim.Play("isCrouch");
         }
         else if(Input.GetKeyUp(KeyCode.LeftControl))
         {
             standUp();
+            anim.SetFloat("isCrouch", 0);
         }            
     }    
-
+    
+    //Function to crouch by cahnging both the collider and controller height
     void Crouch()
     {
+        controller.height = reducedHeight;
         playerCol.height = reducedHeight;
+
     }
+   
+    //Function to return the heights to normal
     void standUp()
     {
         playerCol.height = originalHeight;
+        controller.height = originalheight;
     }
 }
