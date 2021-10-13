@@ -5799,6 +5799,7 @@ GameObject:
   - component: {fileID: 3474804902876939993}
   - component: {fileID: 3913233383013580851}
   - component: {fileID: 1162977466086861144}
+  - component: {fileID: 8936852948700889873}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Player
@@ -6116,6 +6117,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8936852948700889873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2254275742234642237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664127d37fd455849a8aebdd34eaf333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravity: 10
+  jumpForce: 100
 --- !u!1 &2316165421490213963
 GameObject:
   m_ObjectHideFlags: 0

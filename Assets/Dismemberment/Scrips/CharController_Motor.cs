@@ -11,7 +11,8 @@ public class CharController_Motor : NetworkBehaviour
     public float WalkSpeed = 10.0f;
     public float JumpHeight = 10.0f;
     public float WaterHeight = 15.5f;
-
+    
+  
     public GameObject characterBody;
 
     public Camera playerCamera;
@@ -35,6 +36,7 @@ public class CharController_Motor : NetworkBehaviour
 
     void Start()
     {
+        
         character = GetComponent<CharacterController>();
         //Cursor.lockState = CursorLockMode.Locked;
 
@@ -114,19 +116,21 @@ public class CharController_Motor : NetworkBehaviour
             animator.SetBool("isADSWeapon", false);
         }
 
-        // if (Input.GetButton("Jump"))
-        // {
-        //     animator.SetTrigger("isJump");
-        // }
-        // else
-        // {
+        //if (Input.GetButton("Jump"))
+        //{
+          //   animator.SetTrigger("isJump");
+        //}
+        //else
+        //{
         //     animator.ResetTrigger("isJump");
-        // }
+        //}
 
         if (transform.position.y < -5.0f)
         {
             Destroy(characterBody);
         }
+
+       
     }
 
 }
