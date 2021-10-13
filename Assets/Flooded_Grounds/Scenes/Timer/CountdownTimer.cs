@@ -9,7 +9,7 @@ public class CountdownTimer : MonoBehaviour
     //Variables for time
     float currentTime = 0f;
     //Sets timer to be 5 minutes
-    float startingTime = 50f;
+    float startingTime = 300f;
 
     [SerializeField] Text TimerText;
 
