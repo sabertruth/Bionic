@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Flooded_Grounds/Scenes/Killstreak Scene.unity
     guid: 14ad5795f7cb6984ab6e3bfc87c86acd
+  - enabled: 1
+    path: Assets/Flooded_Grounds/Scenes/GameOver Scene.unity
+    guid: 2f0d63c72984f65478220b0ca9c3ebf7
   m_configObjects: {}

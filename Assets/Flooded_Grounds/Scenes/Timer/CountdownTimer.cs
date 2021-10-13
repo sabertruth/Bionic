@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {   
     //Variables for time
     float currentTime = 0f;
     //Sets timer to be 5 minutes
-    float startingTime = 300f;
+    float startingTime = 50f;
 
     [SerializeField] Text TimerText;
 
@@ -27,7 +28,8 @@ public class CountdownTimer : MonoBehaviour
     //Prevent time from going into the negatives
         if (currentTime <=0)
             {
-                currentTime = 0;
+            currentTime = 0;
+            SceneManager.LoadScene("GameOver Scene");
             }
     }
 }
