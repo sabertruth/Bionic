@@ -6149,6 +6149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedBoost: 5
   reducedHeight: 1
+  anim: {fileID: 5159315107455391828}
 --- !u!1 &2316165421490213963
 GameObject:
   m_ObjectHideFlags: 0

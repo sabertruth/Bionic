@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class SoundAnnouncerScript : MonoBehaviour {
 
-    public static AudioClip playerDeathSound, enemyDeathSound, killStreakOneSound, killStreakTwoSound, killStreakThreeSound;
+    public static AudioClip playerDeathSound, enemyDeathSound, KillStreakOneSound, KillStreakTwoSound, KillStreakThreeSound;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
     void Start() {
         
-        PlayerDeathSound = usedsounds.load<AudioClip> ("playerDeathSound");
-        PlayerDeathSound = usedsounds.load<AudioClip> ("enemyDeathSound");
-        PlayerDeathSound = usedsounds.load<AudioClip> ("KillStreakOneSound");
-        PlayerDeathSound = usedsounds.load<AudioClip> ("KillStreakTwoSound");
-        PlayerDeathSound = usedsounds.load<AudioClip> ("KillStreakThreeSound");
+        playerDeathSound = usedSounds.load<AudioClip> ("playerDeathSound");
+        enemyDeathSound = usedSounds.load<AudioClip> ("enemyDeathSound");
+        KillStreakOneSound = usedSounds.load<AudioClip> ("KillStreakOneSound");
+        KillStreakTwoSound = usedSounds.load<AudioClip> ("KillStreakTwoSound");
+        KillStreakThreeSound = usedSounds.load<AudioClip> ("KillStreakThreeSound");
 
         audioSrc = GetComponent<AudioSource> ();
 
@@ -27,19 +27,19 @@ public class SoundAnnouncerScript : MonoBehaviour {
         public static void Playsound (string clip) {
             
             switch (clip) {
-            case "playerDeathSound"
+            case "playerDeathSound":
                 audioSrc.PlayOneShot (playerDeathSound);
                 break;
-            case "enemyDeathSound"
+            case "enemyDeathSound":
                 audioSrc.PlayOneShot (enemyDeathSound);
                 break;
-            case "KillStreakOneSound"
+            case "KillStreakOneSound":
                 audioSrc.PlayOneShot (KillStreakOneSound);
                 break;
-            case "KillStreakTwoSound"
+            case "KillStreakTwoSound":
                 audioSrc.PlayOneShot (KillStreakTwoSound);
                 break;    
-            case "KillStreakThreeSound"
+            case "KillStreakThreeSound":
                 audioSrc.PlayOneShot (KillStreakThreeSound);
                 break;    
             }
