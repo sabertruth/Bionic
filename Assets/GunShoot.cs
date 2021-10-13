@@ -78,7 +78,6 @@ public class GunShoot : MonoBehaviour
             
             //Die
             if (hit.transform.tag.Equals("Player")){
-
                 Destroy(hit.collider.gameObject);
             }
 
