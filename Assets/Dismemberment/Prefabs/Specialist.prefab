@@ -1233,6 +1233,7 @@ GameObject:
   - component: {fileID: 859688882206973509}
   - component: {fileID: 3269244179887616777}
   - component: {fileID: -4978116078272961594}
+  - component: {fileID: -6708327827627827751}
   m_Layer: 0
   m_Name: Specialist
   m_TagString: Untagged
@@ -1391,12 +1392,14 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   PlayerSpeed: 10
-  RunSpeed: 20
   WalkSpeed: 10
   JumpHeight: 10
   WaterHeight: 15.5
+  sprintMultiplier: 2
+  isSprinting: 0
   characterBody: {fileID: 3318081001367211499}
   playerCamera: {fileID: 7317682495204434364}
+  character: {fileID: 0}
   animator: {fileID: 4755817028302622030}
 --- !u!114 &3588007563594611539
 MonoBehaviour:
@@ -1563,7 +1566,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: 10
-  jumpForce: 100
+  jumpForce: 13
+--- !u!114 &-6708327827627827751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3318081001367211499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0405026726ec04490485e7afdbc795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedBoost: 8
+  reducedHeight: 0
+  anim: {fileID: 4755817028302622030}
 --- !u!1 &3422178892148762247
 GameObject:
   m_ObjectHideFlags: 0

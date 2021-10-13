@@ -5800,6 +5800,7 @@ GameObject:
   - component: {fileID: 3913233383013580851}
   - component: {fileID: 1162977466086861144}
   - component: {fileID: 8936852948700889873}
+  - component: {fileID: 7663110325169719874}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Player
@@ -5958,12 +5959,14 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   PlayerSpeed: 10
-  RunSpeed: 20
   WalkSpeed: 10
   JumpHeight: 10
   WaterHeight: 15.5
+  sprintMultiplier: 2
+  isSprinting: 0
   characterBody: {fileID: 2254275742234642237}
   playerCamera: {fileID: 5033409462993521236}
+  character: {fileID: 0}
   animator: {fileID: 5159315107455391828}
 --- !u!114 &-7641196983390522362
 MonoBehaviour:
@@ -6130,7 +6133,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: 10
-  jumpForce: 100
+  jumpForce: 13
+--- !u!114 &7663110325169719874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2254275742234642237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0405026726ec04490485e7afdbc795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedBoost: 8
+  reducedHeight: 0
+  anim: {fileID: 5159315107455391828}
 --- !u!1 &2316165421490213963
 GameObject:
   m_ObjectHideFlags: 0
@@ -9557,15 +9575,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d78fce1f586605a47ab057832f697a8d, type: 3}
---- !u!4 &6450515760731993154 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: d78fce1f586605a47ab057832f697a8d,
-    type: 3}
-  m_PrefabInstance: {fileID: 6450515760731860674}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6450515760731826274 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d78fce1f586605a47ab057832f697a8d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6450515760731860674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6450515760731993154 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: d78fce1f586605a47ab057832f697a8d,
     type: 3}
   m_PrefabInstance: {fileID: 6450515760731860674}
   m_PrefabAsset: {fileID: 0}
