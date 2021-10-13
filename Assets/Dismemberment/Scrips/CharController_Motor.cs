@@ -109,7 +109,7 @@ public class CharController_Motor : NetworkBehaviour
         // Player Crouch-------------------------------
         if (Input.GetKey(KeyCode.C))
         {
-           animator.SetFloat("isCrouch", 1);
+            animator.SetFloat("isCrouch", 1);
             PlayerSpeed = 0.0f;
         }
        else
