@@ -7,17 +7,20 @@ public class CharController_Motor : NetworkBehaviour
 {
     //Character controller
     public float PlayerSpeed = 10.0f;
-    public float RunSpeed = 20.0f;
+    //public float RunSpeed = 20.0f;
     public float WalkSpeed = 10.0f;
     public float JumpHeight = 10.0f;
     public float WaterHeight = 15.5f;
+    
+    public float sprintMultiplier = 2;
+    public bool  isSprinting = false;
     
   
     public GameObject characterBody;
 
     public Camera playerCamera;
 
-    CharacterController character;
+    public CharacterController character;
 
     [Header("Components")]
     public Animator animator;
@@ -81,14 +84,26 @@ public class CharController_Motor : NetworkBehaviour
         animator.SetFloat("vertical", moveVertical);
         animator.SetFloat("horizontal", moveHorizontal);
 
-        //Player running----------------------------------
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+        ////Player running----------------------------------
+        //if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+        //{
+        //    PlayerSpeed = RunSpeed;
+        //}
+        //else
+        //{
+        //    PlayerSpeed = WalkSpeed;
+        //}
+        if(Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.LeftShift))
         {
-            PlayerSpeed = RunSpeed;
+            isSprinting = true;
         }
         else
         {
-            PlayerSpeed = WalkSpeed;
+            isSprinting = false;
+        }
+        if(isSprinting == true)
+        {
+            PlayerSpeed *= sprintMultiplier;
         }
 
         // Player Crouch-------------------------------
@@ -97,7 +112,7 @@ public class CharController_Motor : NetworkBehaviour
             animator.SetFloat("isCrouch", 1);
             PlayerSpeed = 0.0f;
         }
-        else
+       else
         {
             animator.SetFloat("isCrouch", 0);
             PlayerSpeed = WalkSpeed;
