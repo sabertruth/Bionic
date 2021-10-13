@@ -41,7 +41,7 @@ public class CharController_Motor : NetworkBehaviour
     {
         
         character = GetComponent<CharacterController>();
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
 
         //Disables the camera if the player is not local
         if (!hasAuthority)
