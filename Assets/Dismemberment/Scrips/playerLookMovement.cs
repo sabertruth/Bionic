@@ -58,7 +58,7 @@ public class playerLookMovement : MonoBehaviour
             _mouseAbsolute.y = Mathf.Clamp(_mouseAbsolute.y, -clampInDegrees.y * 0.5f, clampInDegrees.y * 0.5f);
         }
 
-        if(isInverted == false)
+        if(!isInverted)
         {
             transform.localRotation = Quaternion.AngleAxis(-_mouseAbsolute.y, targetOrientation * Vector3.right) * targetOrientation;
         }
@@ -78,7 +78,5 @@ public class playerLookMovement : MonoBehaviour
             var yRotation = Quaternion.AngleAxis(_mouseAbsolute.x, transform.InverseTransformDirection(Vector3.up));
             transform.localRotation *= yRotation;
         }
-
-        
     }
 }
