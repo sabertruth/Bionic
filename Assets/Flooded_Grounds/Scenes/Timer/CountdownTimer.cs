@@ -9,7 +9,8 @@ public class CountdownTimer : MonoBehaviour
     //Variables for time
     float currentTime = 0f;
     //Sets timer to be 5 minutes
-    float startingTime = 30000f;
+    float startingTime = 300f;
+
 
     [SerializeField] Text TimerText;
 
@@ -23,9 +24,10 @@ public class CountdownTimer : MonoBehaviour
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
-        TimerText.text = currentTime.ToString ("0");
+        //Seconds converted into readable minutes and seconds
+        TimerText.text = string.Format("{0}:{1:00}", (int)currentTime / 60, (int)(currentTime % 60));
 
-    //Prevent time from going into the negatives
+        //Prevent time from going into the negatives
         if (currentTime <=0)
             {
             currentTime = 0;
