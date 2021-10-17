@@ -45,7 +45,7 @@ public class CrouchSprint : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
             Crouch();
-            anim.Play("isCrouch");
+            anim.Play("isCrouch", 1);
         }
         else if(Input.GetKeyUp(KeyCode.LeftControl))
         {

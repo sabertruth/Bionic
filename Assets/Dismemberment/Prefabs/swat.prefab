@@ -5880,6 +5880,7 @@ GameObject:
   - component: {fileID: 3913233383013580851}
   - component: {fileID: 8986375078949830374}
   - component: {fileID: 3755696851158333470}
+  - component: {fileID: 8502534292121665505}
   m_Layer: 0
   m_Name: swat
   m_TagString: Player
@@ -6229,6 +6230,20 @@ MonoBehaviour:
   speedBoost: 5
   reducedHeight: 1
   anim: {fileID: 5159315107455391828}
+--- !u!114 &8502534292121665505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2254275742234642237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c16319d61df4fb4d91a7677a802d643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reducedHeight: 1.2
+  slideSpeed: 16
 --- !u!1 &2316165421490213963
 GameObject:
   m_ObjectHideFlags: 0
