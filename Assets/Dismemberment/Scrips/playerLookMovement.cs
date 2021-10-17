@@ -1,6 +1,7 @@
  using System.Collections;
  using System.Collections.Generic;
  using UnityEngine;
+ using UnityEngine.UI;
  
 public class playerLookMovement : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class playerLookMovement : MonoBehaviour
     public Vector2 targetDirection;
     public Vector2 targetCharacterDirection;
     public bool isInverted = false;
+    public Toggle invert;
  
     // Assign this if there's a parent object controlling motion, such as a Character Controller.
     // Yaw rotation will affect this object instead of the camera if set.
@@ -65,7 +67,6 @@ public class playerLookMovement : MonoBehaviour
         else
         {
             transform.localRotation = Quaternion.AngleAxis(_mouseAbsolute.y, targetOrientation * Vector3.right) * targetOrientation;
-
         }
         // If there's a character body that acts as a parent to the camera
         if (characterBody)
@@ -78,5 +79,11 @@ public class playerLookMovement : MonoBehaviour
             var yRotation = Quaternion.AngleAxis(_mouseAbsolute.x, transform.InverseTransformDirection(Vector3.up));
             transform.localRotation *= yRotation;
         }
+    }
+
+    public void setInversion()
+    {
+        //isInverted = false;
+        //isInverted.gameObject.SetActive(!isInverted.gameObject.activeSelf);
     }
 }
