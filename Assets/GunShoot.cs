@@ -6,6 +6,18 @@ using UnityEngine.UI;
 
 public class GunShoot : MonoBehaviour
 {
+    //Public Static Variable For score, accessed by Scoreboard Script
+    public int score = 50;
+    private ScoreBoard scoreBoard;
+
+    void Awake()
+    {
+        scoreBoard = GameObject.FindObjectOfType<ScoreBoard> ();
+    }
+
+
+
+
     public float damage;
     public float range;
     public float fireRate;
@@ -79,6 +91,10 @@ public class GunShoot : MonoBehaviour
             //Die
             if (hit.transform.tag.Equals("Player")){
                 Destroy(hit.collider.gameObject);
+
+                //Score Update to Score variable
+                scoreBoard.UpdateScore (score);
+            
             }
 
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));

@@ -7386,6 +7386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda6beb06bc862c46a6ab95c3c50cb42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreText: {fileID: 0}
   damage: 15
   range: 500
   fireRate: 5
@@ -8989,6 +8990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda6beb06bc862c46a6ab95c3c50cb42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreText: {fileID: 0}
   damage: 25
   range: 500
   fireRate: 15
