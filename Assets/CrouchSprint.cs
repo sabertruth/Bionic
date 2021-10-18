@@ -34,7 +34,7 @@ public class CrouchSprint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKey(KeyCode.LeftShift))
         {
             MoveScript.WalkSpeed += speedBoost;
         }
@@ -44,13 +44,13 @@ public class CrouchSprint : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
+            anim.SetFloat("isCrouch", 1);
             Crouch();
-            anim.Play("isCrouch", 1);
         }
         else if(Input.GetKeyUp(KeyCode.LeftControl))
         {
-            standUp();
             anim.SetFloat("isCrouch", 0);
+            standUp();
         }            
     }    
 
@@ -58,6 +58,7 @@ public class CrouchSprint : MonoBehaviour
 
     void Crouch()
     {
+        //anim.SetFloat("isCrouch", 1);
         controller.height = reducedHeight;
         playerCol.height = reducedHeight;
 
@@ -66,6 +67,7 @@ public class CrouchSprint : MonoBehaviour
     //Function to return the heights to normal
     void standUp()
     {
+        //anim.SetFloat("isCrouch", 0);
         playerCol.height = originalHeight;
         controller.height = originalheight;
     }
