@@ -20,6 +20,10 @@ public class GunShoot : MonoBehaviour
     public float fireRate;
     public int ammo;
 
+    public Slider HealthBar;
+    public float Health = 100;
+    private float currentHealth;
+
     //public bool isFiring;
     public int Maxammo;
 
@@ -39,6 +43,7 @@ public class GunShoot : MonoBehaviour
     {
         hitmarker.SetActive(false);
         gunSound = GetComponent<AudioSource>();
+        currentHealth = Health;
     }
     
     // Update is called once per frame
@@ -77,18 +82,20 @@ public class GunShoot : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
             
-            Target target = hit.transform.GetComponent<Target>();
-            if(target != null)
-            {
-                target.TakeDamage(damage);
-                HitActive();
-                Invoke("HitDisable", 0.2f);
-            }
+            //Target target = hit.transform.GetComponent<Target>();
+            //if(target != null)
+           // {
+               // target.TakeDamage(damage);
+               // HitActive();
+                //Invoke("HitDisable", 0.2f);
+          // }
             
             //Die
-            if (hit.transform.tag.Equals("Player")){
-                Destroy(hit.collider.gameObject);
-
+            if (hit.transform.tag.Equals("Player"))
+            {
+                TakeDamage();
+                HitActive();
+                Invoke("HitDisable", 05f);
                 //Score Update to Score variable
                 scoreBoard.UpdateScore (score);
             
@@ -106,6 +113,16 @@ public class GunShoot : MonoBehaviour
         void HitDisable()
         {
             hitmarker.SetActive(false);
+        }
+        void TakeDamage()
+        {
+            currentHealth -= damage;
+            if(currentHealth <= 0)
+            {
+                Destroy(hit.collider.gameObject);
+            }
+            HealthBar.value = currentHealth;
+
         }
     }
 

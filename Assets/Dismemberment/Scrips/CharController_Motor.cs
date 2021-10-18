@@ -93,18 +93,18 @@ public class CharController_Motor : NetworkBehaviour
         //{
         //    PlayerSpeed = WalkSpeed;
         //}
-        if(Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            isSprinting = true;
-        }
-        else
-        {
-            isSprinting = false;
-        }
-        if(isSprinting == true)
-        {
-            PlayerSpeed *= sprintMultiplier;
-        }
+        //if(Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.LeftShift))
+       // {
+           // isSprinting = true;
+       // }
+        //else
+       // {
+       //     isSprinting = false;
+       // }
+       // if(isSprinting == true)
+       // {
+       //     PlayerSpeed *= sprintMultiplier;
+       // }
 
         // Player Crouch-------------------------------
         if (Input.GetKey(KeyCode.C))

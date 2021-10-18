@@ -34,7 +34,7 @@ public class CrouchSprint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             MoveScript.WalkSpeed += speedBoost;
         }
