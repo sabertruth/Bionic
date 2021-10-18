@@ -5752,7 +5752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4872154835648037021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ref_righthand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6176,7 +6176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedBoost: 5
-  reducedHeight: 1.7
+  reducedHeight: 1.5
   anim: {fileID: 5159315107455391828}
 --- !u!114 &3961253861929300224
 MonoBehaviour:
@@ -6391,7 +6391,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 0
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -8810,7 +8810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8494765283596524539}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ref_lefthand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
