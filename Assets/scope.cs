@@ -31,6 +31,8 @@ public class Scope : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         fpsCam.fieldOfView = 45;
         scopeOverlay.SetActive(true);
+        fpsCam.cullingMask = fpsCam.cullingMask & ~(1 << 11);
+        fpsCam.cullingMask = fpsCam.cullingMask & ~(1 << 6);
         weaponsCam.gameObject.SetActive(false);
     }
     void OnUnscoped()
@@ -38,6 +40,8 @@ public class Scope : MonoBehaviour
         animator.SetBool("isScoped", false);
         fpsCam.fieldOfView = 60;
         scopeOverlay.SetActive(false);
+        fpsCam.cullingMask = fpsCam.cullingMask | (1 << 11);
+        fpsCam.cullingMask = fpsCam.cullingMask | (1 << 6);
         weaponsCam.gameObject.SetActive(true);
     }
 }
