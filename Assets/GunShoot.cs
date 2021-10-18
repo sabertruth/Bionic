@@ -15,9 +15,6 @@ public class GunShoot : MonoBehaviour
         scoreBoard = GameObject.FindObjectOfType<ScoreBoard> ();
     }
 
-
-
-
     public float damage;
     public float range;
     public float fireRate;
@@ -32,6 +29,7 @@ public class GunShoot : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
     public AudioSource gunSound;
+    public GameObject hitmarker;
 
     public Animator animator;
 
@@ -43,6 +41,7 @@ public class GunShoot : MonoBehaviour
     /// </summary>
     void Start()
     {
+        hitmarker.SetActive(false);
         gunSound = GetComponent<AudioSource>();
     }
     
@@ -81,11 +80,13 @@ public class GunShoot : MonoBehaviour
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-
+            
             Target target = hit.transform.GetComponent<Target>();
             if(target != null)
             {
                 target.TakeDamage(damage);
+                HitActive();
+                Invoke("HitDisable", 0.2f);
             }
             
             //Die
@@ -100,7 +101,16 @@ public class GunShoot : MonoBehaviour
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGO, 2f);
         }  
-    
+
+        void HitActive()
+        {
+            hitmarker.SetActive(true);
+        }
+
+        void HitDisable()
+        {
+            hitmarker.SetActive(false);
+        }
     }
 
 }

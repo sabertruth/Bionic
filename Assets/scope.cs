@@ -5,50 +5,40 @@ using UnityEngine.InputSystem;
 public class Scope : MonoBehaviour
 {
     public Animator animator;
-    
     public GameObject scopeOverlay;
-    
     private bool isScoped = false;
     public Camera fpsCam;
-    public Camera weaponsCamera;
+    public GameObject weaponsCam;
     
-    public float scopedFOV;
-    private float normalFOV;
- 
+
     void Update()
     {
-        
-         if(Input.GetButtonDown("Fire2"))
-         {
-             isScoped = !isScoped;
-             animator.SetBool("Scoped", isScoped);
-                
-             if (isScoped)
-             {
-               StartCoroutine(OnScoped());
-             }
-             else
-             {
-                OnUnscoped();
-             }
+        if(Input.GetMouseButtonDown(1))
+        {
+            isScoped = !isScoped;
+            animator.SetBool("scope",isScoped);
+            
+            if(isScoped)
+              StartCoroutine(OnScoped());
+            else
+            OnUnscoped();
+
         }
-
-    }
-    void OnUnscoped()
-    {
-        scopeOverlay.SetActive(false);
-        weaponsCamera.SetActive(true);
-
-        fpsCam.fieldOfView = normalFOV;
     }
     IEnumerator OnScoped()
     {
-       yield return new WaitForSeconds(.15f);
-
-       scopeOverlay.SetActive(true);
-       weaponsCamera.SetActive(false);
-
-       normalFOV = fpsCam.fieldOfView;
-       fpsCam.fieldOfView = scopedFOV;
+        animator.SetBool("isScoped", true);
+        yield return new WaitForSeconds(0.5f);
+        fpsCam.fieldOfView = 45;
+        scopeOverlay.SetActive(true);
+        weaponsCam.gameObject.SetActive(false);
+    }
+    void OnUnscoped()
+    {
+        animator.SetBool("isScoped", false);
+        fpsCam.fieldOfView = 60;
+        scopeOverlay.SetActive(false);
+        weaponsCam.gameObject.SetActive(true);
     }
 }
+
