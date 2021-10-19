@@ -96,7 +96,7 @@ public class GunShoot : MonoBehaviour
                 HitActive();
                 Invoke("HitDisable", 05f);
                 //Score Update to Score variable
-                scoreBoard.UpdateScore (score = score - 1);
+                scoreBoard.UpdateScore(score = score - 1);
             
             }
 
