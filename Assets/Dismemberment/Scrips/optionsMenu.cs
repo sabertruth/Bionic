@@ -5,7 +5,7 @@ using UnityEngine;
 public class optionsMenu : MonoBehaviour {
     // Changed to GameObject because only the game object of the menu needs to be accessed, you can 
     // change this to any class that inherits MonoBehaviour
-    //public GameObject optionMenu;
+    public GameObject optionMenu;
 
 	
 	// Update is called once per frame
@@ -14,13 +14,9 @@ public class optionsMenu : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             // // Check whether it's active / inactive 
-            // bool isActive = optionMenu.activeSelf;
+             bool isActive = optionMenu.activeSelf;
 
-            // optionMenu.SetActive(!isActive);
-
-            //optionMenu.gameObject.SetActive(!optionMenu.gameObject.activeSelf);
-
-           Instantiate(Resources.Load<GameObject>("SettingsPanelPrefab")as GameObject);
+            optionMenu.gameObject.SetActive(!optionMenu.gameObject.activeSelf);
 
         }
     }
