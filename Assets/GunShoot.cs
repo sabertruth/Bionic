@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class GunShoot : MonoBehaviour
 {
     //Public Static Variable For score, accessed by Scoreboard Script
-    public int score = 50;
+    public int score = 10;
     private ScoreBoard scoreBoard;
 
     void Awake()
@@ -96,7 +96,7 @@ public class GunShoot : MonoBehaviour
                 HitActive();
                 Invoke("HitDisable", 05f);
                 //Score Update to Score variable
-                scoreBoard.UpdateScore (score);
+                scoreBoard.UpdateScore (score = score - 1);
             
             }
 
