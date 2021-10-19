@@ -27,7 +27,6 @@ public class GunShoot : MonoBehaviour
     //public bool isFiring;
     public int Maxammo;
 
-    
     public Text ammoDisplay;
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
