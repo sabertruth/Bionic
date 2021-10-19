@@ -9687,6 +9687,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4322863876469543928}
     m_Modifications:
+    - target: {fileID: 142648346409166816, guid: e7f48d5c2da32e24ba430dd5f00f4a32,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4474211185331412034, guid: e7f48d5c2da32e24ba430dd5f00f4a32,
         type: 3}
       propertyPath: m_UiScaleMode
