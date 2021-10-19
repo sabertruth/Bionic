@@ -16,7 +16,7 @@ public class Scope : MonoBehaviour
         if(Input.GetMouseButtonDown(1))
         {
             isScoped = !isScoped;
-            animator.SetBool("scoped",isScoped);
+            animator.SetBool("isScoped",isScoped);
             
             if(isScoped)
               StartCoroutine(OnScoped());
