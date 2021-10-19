@@ -1480,6 +1480,7 @@ candidates check time : 24ms
 >>>>>>> a4819649908e508e5db93d40e2f9e9695c570bfb
 console write time    : 0ms
 
+<<<<<<< HEAD
 [api-updater (non-obsolete-error-filter)] 19/10/2021 8:20:14 p.m. : Starting C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
 [api-updater (non-obsolete-error-filter)] Exception caught while loading types from C:\Users\leoni\Desktop\Uni Year 2 Semester 2\Software Development Project\Bionic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
 	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
@@ -1495,5 +1496,15 @@ moved types parse time: 61ms
 candidates parse time : 1ms
 C# parse time         : 192ms
 candidates check time : 27ms
+=======
+[api-updater (non-obsolete-error-filter)] 19/10/2021 8:26:19 p.m. : Starting C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 88.51ms
+moved types parse time: 67ms
+candidates parse time : 2ms
+C# parse time         : 252ms
+candidates check time : 48ms
+>>>>>>> 1b68b54f8981944316c3a1cb278b090b914c69f7
 console write time    : 0ms
 
