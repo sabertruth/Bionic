@@ -34,6 +34,7 @@ public class GunShoot : NetworkBehaviour
     public GameObject impactEffect;
     public AudioSource gunSound;
     public GameObject hitmarker;
+    public AudioSource reloadSound;
 
     public Animator animator;
 
@@ -69,6 +70,7 @@ public class GunShoot : NetworkBehaviour
         {
 
             animator.SetFloat("isReloading", 1);
+            reloadSound.Play();
             ammo = Maxammo;
         }
         else
