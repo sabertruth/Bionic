@@ -18,10 +18,9 @@ Our project Bionic is to develop a First-person shooter (FPS) game available on 
 
 ## Authors
 
-* **Miguel** - *Product Owner, Developer* - [Muhamad Miguel Emmara](https://github.com/MiguelEmmara-ai)
 * **Leon** - *SCRUM Master, Developer* - [Leon](https://github.com/Leonwtv)
 * **Brayden** - *Developer* - [Brayden](https://github.com/brayden1658)
-* **Kishan** - *Developer* - [Kishan](https://github.com/sabertruth)
+* **Kishan** - *Product Owner, Developer* - [Kishan](https://github.com/sabertruth)
 * **Jack** - *Developer* - [Jack](https://github.com/Maudjtrlme)
 
 ## Acknowledgments
