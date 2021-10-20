@@ -10,7 +10,6 @@ public class scope : MonoBehaviour
     public Camera fpsCam;
     public GameObject weaponsCam;
     
-
     void Update()
     {
         if(Input.GetMouseButtonDown(1))
