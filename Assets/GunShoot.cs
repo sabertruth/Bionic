@@ -86,21 +86,12 @@ public class GunShoot : NetworkBehaviour
         {
             Debug.Log(hit.transform.name);
             
-            //Target target = hit.transform.GetComponent<Target>();
-            //if(target != null)
-           // {
-               // target.TakeDamage(damage);
-               // HitActive();
-                //Invoke("HitDisable", 0.2f);
-          // }
-            
             //Take Damage
             if (hit.transform.tag.Equals("Enemyplayer"))
             {
                 TakeDamage();
-                HitActive();
-                Invoke("HitDisable", 0.5f);
-                //Score Update to Score variable
+                StartCoroutine(HitActive());
+                
                 scoreBoard.UpdateScore(score = score - 1);
             
             }
@@ -109,16 +100,13 @@ public class GunShoot : NetworkBehaviour
             Destroy(impactGO, 2f);
         }  
 
-        void HitActive()
+        IEnumerator HitActive()
         {
             hitmarker.SetActive(true);
-        }
-
-        void HitDisable()
-        {
+            yield return new WaitForSeconds(0.5f);
             hitmarker.SetActive(false);
-        }
 
+        }
         void TakeDamage()
         {            
                 currentHealth -= damage;
