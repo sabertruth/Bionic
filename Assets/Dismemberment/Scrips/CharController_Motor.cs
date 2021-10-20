@@ -25,6 +25,8 @@ public class CharController_Motor : NetworkBehaviour
     [Header("Components")]
     public Animator animator;
 
+    public GameObject HUD;
+
     float
 
             moveHorizontal,
@@ -47,6 +49,8 @@ public class CharController_Motor : NetworkBehaviour
         if (!hasAuthority)
         {
             playerCamera.gameObject.SetActive(false);
+            HUD.gameObject.SetActive(false);
+            characterBody.tag = "Enemyplayer";
         }        
     }
 

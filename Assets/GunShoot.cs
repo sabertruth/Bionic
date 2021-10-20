@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Mirror;
 
 
-public class GunShoot : MonoBehaviour
+public class GunShoot : NetworkBehaviour
 {
     //Public Static Variable For score, accessed by Scoreboard Script
     public int score = 10;
@@ -23,8 +24,8 @@ public class GunShoot : MonoBehaviour
     public Slider HealthBar;
     public float Health = 100;
     private float currentHealth;
+    public bool killondeath;
 
-    //public bool isFiring;
     public int Maxammo;
 
     public Text ammoDisplay;
@@ -38,8 +39,13 @@ public class GunShoot : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
+    public GameObject charcter;
+
+    public Transform[] spawn_points;
+
     void Start()
     {
+
         hitmarker.SetActive(false);
         gunSound = GetComponent<AudioSource>();
         currentHealth = Health;
@@ -51,18 +57,17 @@ public class GunShoot : MonoBehaviour
         ammoDisplay.text = ammo.ToString();
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && ammo > 0)
         {  
-            //isFiring = true;
             animator.SetBool("isShooting", true);
             nextTimeToFire = Time.time + 1f/fireRate;
             gunSound.Play();
             Shoot();
             ammo--;
             animator.SetBool("isShooting", false);
-            //isFiring = false;
+
         }
-         if (Input.GetKey(KeyCode.R)) //&& ammo < Maxammo)
+         if (Input.GetKey(KeyCode.R))
         {
-            //isFiring = false;
+
             animator.SetFloat("isReloading", 1);
             ammo = Maxammo;
         }
@@ -89,8 +94,8 @@ public class GunShoot : MonoBehaviour
                 //Invoke("HitDisable", 0.2f);
           // }
             
-            //Die
-            if (hit.transform.tag.Equals("Player"))
+            //Take Damage
+            if (hit.transform.tag.Equals("Enemyplayer"))
             {
                 TakeDamage();
                 HitActive();
@@ -113,16 +118,31 @@ public class GunShoot : MonoBehaviour
         {
             hitmarker.SetActive(false);
         }
+
         void TakeDamage()
+        {            
+                currentHealth -= damage;
+                HealthBar.value = currentHealth;
+                if (currentHealth <= 0)
+                {
+                    if(killondeath)
+                    {
+                        Destroy(hit.collider.gameObject);
+                    }
+                    else
+                    {
+                        currentHealth = Health;
+                        RespawnPlayer();
+                    }
+                }
+                Debug.Log(hit.transform.tag);
+        }
+
+        void RespawnPlayer()
         {
-            currentHealth -= damage;
-            if(currentHealth <= 0)
-            {
-                Destroy(hit.collider.gameObject);
-            }
-            HealthBar.value = currentHealth;
+            Transform t_spawn = spawn_points[UnityEngine.Random.Range(0,spawn_points.Length)];
+            charcter = Instantiate(charcter, t_spawn.position, t_spawn.rotation);
 
         }
     }
-
 }
