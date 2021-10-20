@@ -6819,8 +6819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1480aeb9f3cfe374f9b6e17f98e20440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 40
-  grenadeprefab: {fileID: 7072827371759539946, guid: 3b7580a9e89ff394198e9f15c79616e0,
+  throwForce: 10
+  grenadeprefab: {fileID: 5284502025100944860, guid: 3b7580a9e89ff394198e9f15c79616e0,
     type: 3}
 --- !u!1 &3275245594263754823
 GameObject:
