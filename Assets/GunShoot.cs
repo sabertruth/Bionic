@@ -93,8 +93,8 @@ public class GunShoot : MonoBehaviour
             if (hit.transform.tag.Equals("Player"))
             {
                 TakeDamage();
-                HitActive();
-                Invoke("HitDisable", 0.5f);
+               StartCoroutine(HitActive());
+                
                 //Score Update to Score variable
                 scoreBoard.UpdateScore (score = score - 1);
             
@@ -104,15 +104,15 @@ public class GunShoot : MonoBehaviour
             Destroy(impactGO, 2f);
         }  
 
-        void HitActive()
+        IEnumerator HitActive()
         {
             hitmarker.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            hitmarker.SetActive(false);
+
         }
 
-        void HitDisable()
-        {
-            hitmarker.SetActive(false);
-        }
+
         void TakeDamage()
         {
             currentHealth -= damage;

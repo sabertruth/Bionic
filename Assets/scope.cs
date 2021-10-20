@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Scope : MonoBehaviour
+public class scope : MonoBehaviour
 {
     public Animator animator;
     public GameObject scopeOverlay;
