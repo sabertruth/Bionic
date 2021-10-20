@@ -9,6 +9,7 @@ public class PlayerJump : MonoBehaviour
     public float gravity = 10.0f;
     private float verticalVelocity;
     public float jumpForce = 15.0f;
+    public AudioSource jumpSound;
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class PlayerJump : MonoBehaviour
             verticalVelocity = -gravity * Time.deltaTime;
             if(Input.GetKeyDown(KeyCode.Space))
             {
+                jumpSound.Play();
                 verticalVelocity = jumpForce;
 
             }
