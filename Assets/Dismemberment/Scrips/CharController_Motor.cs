@@ -49,6 +49,7 @@ public class CharController_Motor : NetworkBehaviour
         //Disables the camera if the player is not local
         if (!hasAuthority)
         {
+            Cursor.lockState = CursorLockMode.None;
             playerCamera.gameObject.SetActive(false);
             HUD.gameObject.SetActive(false);
             characterBody.tag = "Enemyplayer";
