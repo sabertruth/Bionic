@@ -13,9 +13,10 @@ public class optionsMenu : MonoBehaviour {
         // Reverse the active state every time escape is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Cursor.lockState = CursorLockMode.None;
             // // Check whether it's active / inactive 
-             bool isActive = optionMenu.activeSelf;
-
+            bool isActive = optionMenu.activeSelf;
+            
             optionMenu.gameObject.SetActive(!optionMenu.gameObject.activeSelf);
 
         }

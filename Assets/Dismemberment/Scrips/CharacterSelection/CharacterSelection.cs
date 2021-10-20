@@ -19,6 +19,7 @@ public class CharacterSelection : NetworkBehaviour
 
     public override void OnStartClient()
     {
+
         if (characterPreviewParent.childCount == 0)
         {
             foreach (var character in characters)
@@ -54,10 +55,9 @@ public class CharacterSelection : NetworkBehaviour
     public void CmdSelect( int characterIndex, NetworkConnectionToClient sender = null)
     {
         Transform t_spawn = spawn_points[UnityEngine.Random.Range(0,spawn_points.Length)];
-
         GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab, t_spawn.position, t_spawn.rotation);
-
         NetworkServer.Spawn (characterInstance, sender);
+
     }
 
     public void Right()
