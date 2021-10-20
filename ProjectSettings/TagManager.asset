@@ -8,6 +8,7 @@ TagManager:
   - spawn
   - ENEMY
   - Ground
+  - Enemyplayer
   layers:
   - Default
   - TransparentFX
