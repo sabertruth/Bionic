@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 8837539123482004679}
   - component: {fileID: 9055417676958073466}
   - component: {fileID: 8376619415601662880}
+  - component: {fileID: 298159939825168270}
   m_Layer: 0
   m_Name: m26
   m_TagString: Untagged
@@ -272,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 7072827371759539946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.1392, y: 1.9, z: 3.48}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1.5}
   m_Children:
   - {fileID: 7072827371759612412}
   - {fileID: 7072827371759721432}
@@ -347,6 +348,23 @@ CapsuleCollider:
   m_Height: 0
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0.01}
+--- !u!114 &298159939825168270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072827371759539946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca49df54b68018a4ea43982f5c168634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 3
+  radius: 5
+  force: 600
+  explosionEffect: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3,
+    type: 3}
 --- !u!1 &7072827371759552970
 GameObject:
   m_ObjectHideFlags: 0
