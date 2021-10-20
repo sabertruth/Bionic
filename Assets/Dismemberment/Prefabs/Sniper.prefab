@@ -8730,7 +8730,7 @@ MonoBehaviour:
   hitmarker: {fileID: 2313785283795310856}
   reloadSound: {fileID: 5510510195413246299}
   animator: {fileID: 5159315107455391828}
-  charcter: {fileID: 0}
+  charcter: {fileID: 2254275742234642237}
   spawn_points: []
 --- !u!114 &4099706352665316562
 MonoBehaviour:
