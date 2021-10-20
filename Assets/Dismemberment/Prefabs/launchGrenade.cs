@@ -7,8 +7,6 @@ public class launchGrenade : MonoBehaviour
     public float throwForce = 40f;
     public GameObject grenadeprefab;
 
-    float range = 10f;
-
     //Launch grenade when q is pressed
     void Update()
     {
